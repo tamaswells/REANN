@@ -29,7 +29,9 @@ pip install torch==1.10.1+cu113 -f https://download.pytorch.org/whl/torch_stable
 - if you have cuda 11.1
 
 pip install torch==1.10.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html 
+
 pip install opt_einsum
+
 *Training REANN*
 
 python path_to_reann/reann/run/train.py
