@@ -19,6 +19,18 @@ ___________________________________________________________
 *RuntimeError: "Distributed package doesn't have NCCL built in"
 This error is induced by using the "nccl" backend when you run the package on the gpu. More details can be seen in the introduction about the parameters "DDP_backend" in manual. In the version updated on 2022-5-9, this parameters will be forced to "gloo" when the package can not find the gpu irrelative what you have set in the "input_nn".
 
+**Redistribution:**
+___________________________________________________________
+*This redistribution is made by Nan Xu for running REANN on a standalone workstation"
+*Install torch and opt_einsum package*
+- if you have cuda 11.3
+pip install torch==1.10.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html 
+- if you have cuda 11.1
+pip install torch==1.10.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html 
+pip install opt_einsum
+*Training REANN *
+python path_to_reann/reann/run/train.py
+
 **References:**
 __________________________________________________
 If you use this package, please cite these works.
