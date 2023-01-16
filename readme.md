@@ -21,14 +21,14 @@ This error is induced by using the "nccl" backend when you run the package on th
 
 **Redistribution:**
 ___________________________________________________________
-*This redistribution is made by Nan Xu for running REANN on a standalone workstation"
+***This redistribution is made by Nan Xu for running REANN on a standalone workstation"***
 *Install torch and opt_einsum package*
 - if you have cuda 11.3
 pip install torch==1.10.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html 
 - if you have cuda 11.1
 pip install torch==1.10.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html 
 pip install opt_einsum
-*Training REANN *
+*Training REANN*
 python path_to_reann/reann/run/train.py
 
 **References:**
